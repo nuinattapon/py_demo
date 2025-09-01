@@ -64,3 +64,6 @@ venv
 # chromadb
 **/chroma_db/
 **/chroma_metadata_db/
+
+# temp
+**/.tmp/
