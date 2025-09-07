@@ -67,3 +67,6 @@ venv
 
 # temp
 **/.tmp/
+
+# pdf
+**/*.pdf

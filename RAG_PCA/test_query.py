@@ -15,14 +15,14 @@ def test_query():
     print(f"Collection '{collection.name}' contains {collection.count()} documents")
     
     # Query collection
-    query_text = "How many nodes we can have in OKE cluster?"
+    query_text = "How to create a compute instance?"
     results = collection.query(
         query_texts=[query_text],
-        n_results=5
+        n_results=10   
     )
     
     print(f"\nQuery: {query_text}")
-    print(f"Top 5 results:")
+    print(f"Top 10 results:")
     
     # Prepare context from retrieved documents
     context = ""
@@ -79,7 +79,7 @@ def test_query():
             messages=messages,
             model="openai/gpt-oss-20b",
             temperature=0,
-            max_tokens=1000
+            max_tokens=3000
         )
         
         print("\nLLM Response:")
